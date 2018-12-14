@@ -1,0 +1,9 @@
+<div>
+  <h2 style="text-align: center">Here are some headlines :</h2>
+  <ul>
+    <li class="links" *ngFor = "let anydata of newsdata2 ;let i = index">
+      <div [routerLink]="['/details/:comment', {comment:i} ]">{{anydata.title}}</div>
+    </li>
+  </ul>
+</div>
+
